@@ -53,21 +53,21 @@ export default function PricingTeaser() {
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg text-center w-full md:w-auto">
               <h3 className="text-xl font-semibold mb-2">Hotel Rooms</h3>
               <p className="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">
-                Starting at ₹1,499
+                Starting at ₹1,999
               </p>
               <p className="text-sm text-gray-300">per night</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg text-center w-full md:w-auto">
               <h3 className="text-xl font-semibold mb-2">Wedding Venue</h3>
               <p className="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">
-                Starting at ₹25,000
+                Starting at ₹199,000
               </p>
               <p className="text-sm text-gray-300">per event</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg text-center w-full md:w-auto">
               <h3 className="text-xl font-semibold mb-2">Party Hall</h3>
               <p className="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">
-                Starting at ₹15,000
+                Starting at ₹10,000
               </p>
               <p className="text-sm text-gray-300">per event</p>
             </div>

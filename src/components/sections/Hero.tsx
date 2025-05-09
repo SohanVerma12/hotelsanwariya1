@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import image from "../../assets/secondimage.jpeg";
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,7 +25,7 @@ export default function Hero() {
       {/* Hero Background */}
       <div className="absolute inset-0 overflow-hidden">
         <Image
-          src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npLmfvaILG4-w4wIcBWkKRkd-2jhbjUp9VxFlo67xlgy1wTvXyxVF9NDxXEK4dWWVZ3CdPtJdrIj9TVk9bHPRmuo5VW9_xY8VS1HDf76GfgxxCsXc-7hs-kl6I2pQilIvfHa7E=s680-w680-h510-rw"
+          src={image}
           alt="Hotel exterior view"
           fill
           priority
