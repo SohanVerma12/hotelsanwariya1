@@ -35,7 +35,7 @@ export default function AboutUs() {
       id: "feature-1",
       title: "Affordable Luxury Rooms",
       description:
-        "Experience comfort without breaking your budget. Our rooms offer premium amenities at affordable rates.",
+        "Experience comfort without breaking yyour budget. Our rooms offer premium amenities at affordable rates.",
       icon: <CheckCircle className="h-6 w-6 text-blue-700" />,
     },
     {
