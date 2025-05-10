@@ -76,6 +76,28 @@ export default function ContactUs() {
     };
   }, []);
 
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    const formData = new URLSearchParams();
+    formData.append("name", "Sohan");
+    formData.append("whatsapp", "9340785987");
+    formData.append("feedback", "like");
+  
+    try {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbxF9XuBR7-QRLBLp15p1FO5VSmRGRLhfv0LfS5E40-XZ92YMolU52dcztGlgTf_qVwk/exec", {
+        method: "POST",
+        body: formData,
+      });
+  
+      const result = await response.json();
+      console.log("Success:", result);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+
   return (
     <section id="contact-section" className="py-16 px-4 md:px-8 bg-gray-50">
       <div className="container mx-auto">
@@ -196,7 +218,7 @@ export default function ContactUs() {
                         </FormItem>
                       )}
                     />
-                    <Button type="submit" className="w-full bg-blue-700 hover:bg-blue-800">
+                    <Button type="submit"  onClick={handleSubmit} className="w-full bg-blue-700 hover:bg-blue-800">
                       Submit
                     </Button>
                   </form>
